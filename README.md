@@ -12,11 +12,13 @@
 
 ### column
 
-* proto_name :string-
-* concept :text-
-* catch_copy :text-
-* likes_num :integer-
-* user_id :integer-
+* name :string
+* concept :text
+* catch_copy :text
+* likes_num :integer
+* comment_num :integer
+* user_id :integer
+
 
 ### association
 
@@ -51,12 +53,12 @@
 ### column
 
 * prototype_id :integer
-* image :text
-* status :integer
+* proto_image :text
+* status :integer-enum%i(main sub)
 
 ### association
 
-* belongs_to :prototype-enum%i(main sub)
+* belongs_to :prototype
 
 
 ## comments
