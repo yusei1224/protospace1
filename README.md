@@ -1,16 +1,16 @@
 # Table
 
-*prototypes+
-*users+
-*images+
-*comments+
-*likes+
+* prototypes
+* users
+* images
+* comments
+* likes
 
 
 
 ## prototypes
 
-###column
+### column
 
 * proto_name :string-
 * concept :text-
@@ -18,45 +18,45 @@
 * likes_num :integer-
 * user_id :integer-
 
-###association
+### association
 
-* has_many:images
-* has_many:comments
-* has_many:likes
-* belongs_to:user
+* has_many :images
+* has_many :comments
+* has_many :likes
+* belongs_to :user
 
 
 
 ## users
 
-###column
+### column
 
-* name :string-
-* works :text-
-* profile :text-
-* avatar :text-
-* email :string-
-* password :string-
-* member :string-
+* name :string
+* works :text
+* profile :text
+* avatar :text
+* email :string
+* password :string
+* member :string
 
-###association
+### association
 
-* has_many:prototypes
-* has_many:comments
-* has_many:likes
+* has_many :prototypes
+* has_many :comments
+* has_many :likes
 
 
 ## images
 
 ### column
 
-* prototype_id:integer
-* image:text
-* status:integer
+* prototype_id :integer
+* image :text
+* status :integer
 
 ### association
 
-* belongs_to:prototype-enum%i(main sub)
+* belongs_to :prototype-enum%i(main sub)
 
 
 ## comments
@@ -69,8 +69,8 @@
 
 ### associtation
 
-* belongs_to:prototype
-* belongs_to:user
+* belongs_to :prototype
+* belongs_to :user
 
 
 ## likes
