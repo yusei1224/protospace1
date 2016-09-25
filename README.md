@@ -36,7 +36,7 @@
 * name :string
 * works :text
 * profile :text
-* avatar :text
+* avatar :string
 * email :string
 * password :string
 * member :string
@@ -53,7 +53,7 @@
 ### column
 
 * prototype_id :integer
-* proto_image :text
+* proto_image :string
 * status :integer-enum%i(main sub)
 
 ### association
