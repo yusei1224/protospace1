@@ -1,6 +1,4 @@
 class PrototypesController < ApplicationController
-
-
 	def index
 	end
 
@@ -9,5 +7,4 @@ class PrototypesController < ApplicationController
 
 	def show
 	end
-	
 end
